@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>LeFix · Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stars-bg"></canvas>
+  <div class="snow-layer"></div>
+<div id="intro-overlay">
+  <div class="intro-loader" id="intro-loader">
+    <div class="loader-ring"></div>
+    <p>Cargando...</p>
+  </div>
+
+  <div class="intro-verify" id="intro-verify">
+    <div class="verify-box">
+      <div class="verify-left">
+        <input type="checkbox" id="human-check">
+        <label for="human-check">No soy un robot</label>
+      </div>
+      <button id="verify-enter">Entrar</button>
+    </div>
+  </div>
+</div>
+
+  <main class="app">
+
+    <div class="decor decor-halloween decor-spider"></div>
+    <div class="decor decor-halloween decor-web"></div>
+    <div class="decor decor-xmas decor-hat"></div>
+    <div class="decor decor-xmas decor-lights"></div>
+
+<section class="panel active" data-panel="home">
+  <div class="card hero-card">
+    <div class="hero-avatar-wrap">
+      <img src="img/MyAvatarNew.jpg" alt="Avatar" class="avatar-hero" />
+    </div>
+    <h1 class="title-main">LEFIX</h1>
+    <p class="subtitle-main">Programmer · Gamer · Minecraft Expert (5+ yrs)</p>
+  </div>
+</section>
+
+<section class="panel" data-panel="about">
+  <div class="card card-center">
+    <h1 class="title-main">LEFIX</h1>
+    <p class="subtitle-main">Programmer · Gamer · Minecraft Expert (5+ yrs)</p>
+
+    <p>
+      Soy un configurador de servidores <span class="mc">Minecraft</span> al que le motiva montar
+      proyectos nuevos, completos y bien pulidos para los jugadores.
+      Disfruto llevar cada idea desde el primer archivo de configuración
+      hasta el servidor en producción, sin dejar nada a medias.
+    </p>
+
+    <p>
+      Para mí, cada nuevo plugin es un desafío: revisar su configuración,
+      entender su lógica y dejarlo impecable, totalmente traducido y adaptado
+      a la experiencia que quieres ofrecer en tu comunidad.
+      No paro hasta que cada mensaje, menú y detalle quede coherente,
+      limpio y profesional.
+    </p>
+  </div>
+</section>
+
+<section class="panel" data-panel="services">
+  <div class="card">
+    <h2>Servicios que ofrezco</h2>
+    <ul class="nice-list">
+      <li>Configuración y <strong>personalización avanzada</strong> de plugins (mensajes, menús, formatos, permisos, placeholders).</li>
+      <li><strong>Traducción profesional</strong> de plugins completos, incluso archivos de más de 5000 líneas.</li>
+      <li>Creación y ajuste de modalidades como <span class="mc">Survival</span>, BoxPvP, RandomKits y otros modos personalizados.</li>
+      <li>Implementación de temas, textos y traducciones para tiendas <strong>Tebex</strong>.</li>
+      <li>Configuración completa de tiendas en Tebex (paquetes, rangos, cupones y comandos).</li>
+      <li>Optimización básica de <strong>Bungee / Velocity</strong> y <strong>Paper / Spigot</strong> enfocada a estabilidad y experiencia de jugador.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="panel" data-panel="plugins">
+  <div class="plugins-wrap">
+    <h1 class="plugins-title">Plugins que he configurado</h1>
+    <p class="plugins-subtitle">
+      Selección de plugins con los que trabajo a diario para montar y optimizar servidores.
+    </p>
+
+    <div class="plugins-grid">
+      <div class="plugin-card">
+        <h2>Core, acceso y utilidades</h2>
+        <ul>
+          <li>NLogin / NLogin Premium</li>
+          <li>NullCordX · Bungee · Velocity</li>
+          <li>EssentialsX</li>
+          <li>TAB</li>
+          <li>PL-HIDE-PRO</li>
+          <li>ConditionalEvents</li>
+          <li>ChatSentinel</li>
+        </ul>
+      </div>
+
+      <div class="plugin-card">
+        <h2>Economía, juego y progreso</h2>
+        <ul>
+          <li>zAuctionHouse</li>
+          <li>JetsPrisonMines</li>
+          <li>Mob Farm Manager</li>
+          <li>ExcellentsCrates</li>
+          <li>PlotSquared v4</li>
+          <li>Configuración completa de tiendas en Tebex</li>
+          <li>Implementación de temas y traducciones en Tebex</li>
+        </ul>
+      </div>
+
+      <div class="plugin-card">
+        <h2>PvP, clanes y experiencia</h2>
+        <ul>
+          <li>UltimateClans / UltimateKoth</li>
+          <li>DeluxeCombat</li>
+          <li>LiteBans</li>
+          <li>Vulcan Anti-Cheat (ajustes básicos)</li>
+          <li>ProCosmetics (traducción completa de +5000 líneas)</li>
+          <li>AjParkour</li>
+          <li>Otros plugins personalizados y eventos especiales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" data-panel="workflow">
+  <div class="card">
+    <h2>Cómo trabajo</h2>
+    <ul class="nice-list">
+      <li>Configs limpias, organizadas y listas para usar.</li>
+      <li>Comunicación constante durante el proyecto (feedback, pruebas y cambios).</li>
+      <li><strong>Soporte de hasta 15 días</strong> tras realizar la configuracion.</li>
+    </ul>
+
+    <h2>Rangos de precio</h2>
+    <p>
+      Desde <strong>3 € hasta 60 €</strong>, según número de plugins y complejidad.
+      Cuéntame qué servidor tienes en mente y preparo un presupuesto ajustado.
+    </p>
+  </div>
+</section>
+
+<section class="panel" data-panel="projects">
+  <div class="card project-card">
+    <h2>Proyectos destacados</h2>
+
+    <div class="project-card-inner">
+      <div class="project-logo-box">
+        <img src="img\logo.png" alt="OvniCraft Network">
+
+        <div class="project-tags">
+          <span class="project-tag">CEO</span>
+          <span class="project-tag">PROGRAMMER</span>
+          <span class="project-tag">3 AÑOS</span>
+          <span class="project-tag">Survival, BoxPvP, RandomKits...</span>
+          <span class="project-tag">PROXY / AUTH / 2 LOBBYS</span>
+        </div>
+      </div>
+
+      <div class="project-info">
+        <ul class="nice-list">
+          <li><strong>Mi Network personal</strong> - 70+ jugadores peak, Tebex + Pterodactyl.</li>
+          <li><strong>ProCosmetics traducido</strong> - +5000 líneas al español perfecto.</li>
+          <li><strong>BoxPvP custom</strong> - Sistema completo con kits, economía y clanes.</li>
+          <li>Soporte a servidores con <strong>500+ plugins</strong> sin lag y plugins recomendados.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" data-panel="contact">
+  <div class="card card-center">
+    <h2>¡Hablemos de tu servidor!</h2>
+    <p>Discord: <strong>LeFixYT</strong></p>
+    <p>Email: <strong>lefix@protonmail.com</strong></p>
+    <p>Presupuesto en <strong>24h</strong> - configs listas en <strong>48h</strong>.</p>
+  </div>
+</section>
+
+<nav class="nav">
+  <button class="nav-btn active" data-target="home">
+    <span class="nav-emoji">🏠</span>
+    <span class="nav-label">Home</span>
+  </button>
+  <button class="nav-btn" data-target="about">
+    <span class="nav-emoji">👤</span>
+    <span class="nav-label">Sobre mí</span>
+  </button>
+<button class="nav-btn" data-target="plugins">
+  <span class="nav-emoji">🧩</span>
+  <span class="nav-label">Plugins</span>
+</button>
+  <button class="nav-btn" data-target="projects">
+    <span class="nav-emoji">💻</span>
+    <span class="nav-label">Proyectos</span>
+  </button>
+  <button class="nav-btn" data-target="workflow">
+    <span class="nav-emoji">⚙️</span>
+    <span class="nav-label">Workflow</span>
+  </button>
+  <button class="nav-btn" data-target="contact">
+    <span class="nav-emoji">✉️</span>
+    <span class="nav-label">Contacto</span>
+  </button>
+</nav>
+
+<div class="music-player">
+      <button id="mp-prev" class="mp-btn">⏮</button>
+      <button id="mp-play" class="mp-btn">▶</button>
+      <button id="mp-pause" class="mp-btn">⏸</button>
+      <button id="mp-next" class="mp-btn">⏭</button>
+
+  <div class="mp-seek-wrap">
+    <div class="mp-seek-progress"></div>
+    <input id="mp-seek" type="range" min="0" max="0" value="0" />
+  </div>
+
+<div class="mp-volume-block">
+  <span class="mp-volume-icon">🔊</span>
+  <div class="mp-volume-wrap">
+    <div class="mp-volume-progress"></div>
+    <input id="mp-volume" type="range" min="0" max="1" step="0.01" value="0.4" />
+  </div>
+</div>
+
+  <span id="mp-time" class="mp-time">00:00 / 00:00</span>
+  <span id="mp-title" class="mp-title">Musica 🎶</span>
+</div>
+
+<audio id="mp-audio">
+  <source src="chill1.mp3" type="audio/mpeg">
+</audio>
+
+    <div class="theme-switcher">
+      <button class="theme-btn active" data-theme="default" title="Tema normal">🎨</button>
+      <button class="theme-btn" data-theme="xmas" title="Tema navidad">🎄</button>
+      <button class="theme-btn" data-theme="halloween" title="Tema halloween">🎃</button>
+    </div>
+  </main>
+
+  <audio id="ui-click" src="audio/click.mp3" preload="auto" muted></audio>
+  <canvas id="mp-visualizer"></canvas>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
