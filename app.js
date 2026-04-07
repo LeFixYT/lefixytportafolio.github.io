@@ -73,10 +73,11 @@ function initMusicPlayer(){
   const seekProgress   = document.querySelector('.mp-seek-progress');
   const volumeProgress = document.querySelector('.mp-volume-progress');
 
-  audio.volume = volumeSlider.value;
-  if (volumeProgress){
-    volumeProgress.style.width = `${volumeSlider.value * 100}%`;
-  }
+audio.volume = 0.05;
+volumeSlider.value = 0.05;
+if (volumeProgress){
+volumeProgress.style.width = `5%`;
+}
 
   let currentTrack = 0;
 
