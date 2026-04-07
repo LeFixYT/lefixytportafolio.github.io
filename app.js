@@ -329,13 +329,26 @@ function initIntroGate(){
     verify.style.display = 'block';
   }
 
-  function unlock(){
-    if (unlocked) return;
-    if (!checkbox.checked) return; 
-    unlocked = true;
-    overlay.classList.add('hidden');
-    playClickSound();
+function unlock(){
+  if (unlocked) return;
+  if (!checkbox.checked) return; 
+  unlocked = true;
+  overlay.classList.add('hidden');
+  playClickSound();
+
+  const audio = document.getElementById('mp-audio');
+  const playBtn = document.getElementById('mp-play');
+  const pauseBtn = document.getElementById('mp-pause');
+
+  if (audio){
+    audio.play().catch(() => {});
   }
+
+  if (playBtn && pauseBtn){
+    playBtn.style.display = 'none';
+    pauseBtn.style.display = 'flex';
+  }
+}
 
   setTimeout(showVerify, 2200);
 
