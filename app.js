@@ -306,10 +306,29 @@ btn.addEventListener('click', () => {
   });
 }
 
+let audioUnlocked = false;
+
+function unlockUiAudio(){
+const clickSound = document.getElementById('ui-click');
+if (!clickSound) return;
+
+if (clickSound.muted) clickSound.muted = false;
+clickSound.volume = 1;
+audioUnlocked = true;
+}
+
 function playClickSound(){
-  const clickSound = document.getElementById('ui-click');
-  clickSound.currentTime = 0;
-  clickSound.play().catch(() => {});
+const clickSound = document.getElementById('ui-click');
+if (!clickSound) return;
+
+if (clickSound.muted) clickSound.muted = false;
+clickSound.volume = 1;
+clickSound.currentTime = 0;
+
+const playPromise = clickSound.play();
+if (playPromise && typeof playPromise.catch === 'function') {
+playPromise.catch(() => {});
+}
 }
 
 function initIntroGate(){
