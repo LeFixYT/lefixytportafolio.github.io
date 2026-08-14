@@ -2,251 +2,265 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>LeFix · Portafolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LeFix — Minecraft Developer & Server Specialist. Configuración, optimización, plugins y redes Minecraft." />
+  <title>LeFix — Minecraft Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://www.youtube.com/iframe_api" async></script>
 </head>
-<body>
-  <canvas id="stars-bg"></canvas>
-  <div class="snow-layer"></div>
-<div id="intro-overlay">
-  <div class="intro-loader" id="intro-loader">
-    <div class="loader-ring"></div>
-    <p>Cargando...</p>
-  </div>
+<body class="theme-default">
+  <canvas id="stars-bg" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="snow-layer" aria-hidden="true"></div>
 
-  <div class="intro-verify" id="intro-verify">
-    <div class="verify-box">
-      <div class="verify-left">
-        <input type="checkbox" id="human-check">
-        <label for="human-check">No soy un robot</label>
-      </div>
-      <button id="verify-enter">Entrar</button>
+  <div id="intro-overlay" aria-hidden="true">
+    <div class="intro-loader" id="intro-loader">
+      <div class="loader-ring"></div>
+      <span>Preparando portfolio...</span>
     </div>
-  </div>
-</div>
-
-  <main class="app">
-
-    <div class="decor decor-halloween decor-spider"></div>
-    <div class="decor decor-halloween decor-web"></div>
-    <div class="decor decor-xmas decor-hat"></div>
-    <div class="decor decor-xmas decor-lights"></div>
-
-<section class="panel active" data-panel="home">
-  <div class="card hero-card">
-    <div class="hero-avatar-wrap">
-      <img src="img/MyAvatarNew.jpg" alt="Avatar" class="avatar-hero" />
-    </div>
-    <h1 class="title-main">LEFIX</h1>
-    <p class="subtitle-main">Programmer · Gamer · Minecraft Expert (5+ yrs)</p>
-  </div>
-</section>
-
-<section class="panel" data-panel="about">
-  <div class="card card-center">
-    <h1 class="title-main">LEFIX</h1>
-    <p class="subtitle-main">Programmer · Gamer · Minecraft Expert (5+ yrs)</p>
-
-    <p>
-      Soy un configurador de servidores <span class="mc">Minecraft</span> al que le motiva montar
-      proyectos nuevos, completos y bien pulidos para los jugadores.
-      Disfruto llevar cada idea desde el primer archivo de configuración
-      hasta el servidor en producción, sin dejar nada a medias.
-    </p>
-
-    <p>
-      Para mí, cada nuevo plugin es un desafío: revisar su configuración,
-      entender su lógica y dejarlo impecable, totalmente traducido y adaptado
-      a la experiencia que quieres ofrecer en tu comunidad.
-      No paro hasta que cada mensaje, menú y detalle quede coherente,
-      limpio y profesional.
-    </p>
-  </div>
-</section>
-
-<section class="panel" data-panel="services">
-  <div class="card">
-    <h2>Servicios que ofrezco</h2>
-    <ul class="nice-list">
-      <li>Configuración y <strong>personalización avanzada</strong> de plugins (mensajes, menús, formatos, permisos, placeholders).</li>
-      <li><strong>Traducción profesional</strong> de plugins completos, incluso archivos de más de 5000 líneas.</li>
-      <li>Creación y ajuste de modalidades como <span class="mc">Survival</span>, BoxPvP, RandomKits y otros modos personalizados.</li>
-      <li>Implementación de temas, textos y traducciones para tiendas <strong>Tebex</strong>.</li>
-      <li>Configuración completa de tiendas en Tebex (paquetes, rangos, cupones y comandos).</li>
-      <li>Optimización básica de <strong>Bungee / Velocity</strong> y <strong>Paper / Spigot</strong> enfocada a estabilidad y experiencia de jugador.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="panel" data-panel="plugins">
-  <div class="plugins-wrap">
-    <h1 class="plugins-title">Plugins que he configurado</h1>
-    <p class="plugins-subtitle">
-      Selección de plugins con los que trabajo a diario para montar y optimizar servidores.
-    </p>
-
-    <div class="plugins-grid">
-      <div class="plugin-card">
-        <h2>Core, acceso y utilidades</h2>
-        <ul>
-          <li>NLogin / NLogin Premium</li>
-          <li>NullCordX · Bungee · Velocity</li>
-          <li>EssentialsX</li>
-          <li>TAB</li>
-          <li>PL-HIDE-PRO</li>
-          <li>ConditionalEvents</li>
-          <li>ChatSentinel</li>
-        </ul>
-      </div>
-
-      <div class="plugin-card">
-        <h2>Economía, juego y progreso</h2>
-        <ul>
-          <li>zAuctionHouse</li>
-          <li>JetsPrisonMines</li>
-          <li>Mob Farm Manager</li>
-          <li>ExcellentsCrates</li>
-          <li>PlotSquared v4</li>
-          <li>Configuración completa de tiendas en Tebex</li>
-          <li>Implementación de temas y traducciones en Tebex</li>
-        </ul>
-      </div>
-
-      <div class="plugin-card">
-        <h2>PvP, clanes y experiencia</h2>
-        <ul>
-          <li>UltimateClans / UltimateKoth</li>
-          <li>DeluxeCombat</li>
-          <li>LiteBans</li>
-          <li>Vulcan Anti-Cheat (ajustes básicos)</li>
-          <li>ProCosmetics (traducción completa de +5000 líneas)</li>
-          <li>AjParkour</li>
-          <li>Otros plugins personalizados y eventos especiales</li>
-        </ul>
+    <div class="intro-verify" id="intro-verify">
+      <div class="verify-box">
+        <span class="eyebrow">LEFIX.DEV</span>
+        <h2>Bienvenido.</h2>
+        <p>Una mirada rápida a mi trabajo con Minecraft.</p>
+        <label class="human-check"><input type="checkbox" id="human-check" /><span></span> Estoy listo para entrar</label>
+        <button id="verify-enter" class="btn btn-primary">Entrar <span>↗</span></button>
       </div>
     </div>
   </div>
-</section>
 
-<section class="panel" data-panel="workflow">
-  <div class="card">
-    <h2>Cómo trabajo</h2>
-    <ul class="nice-list">
-      <li>Configs limpias, organizadas y listas para usar.</li>
-      <li>Comunicación constante durante el proyecto (feedback, pruebas y cambios).</li>
-      <li><strong>Soporte de hasta 15 días</strong> tras realizar la configuracion.</li>
-    </ul>
-
-    <h2>Rangos de precio</h2>
-    <p>
-      Desde <strong>3 € hasta 60 €</strong>, según número de plugins y complejidad.
-      Cuéntame qué servidor tienes en mente y preparo un presupuesto ajustado.
-    </p>
+  <!-- TOUR VIDEO BACKGROUND: preloaded behind the portfolio for a smoother start -->
+  <div id="tour-video-layer" aria-hidden="true">
+    <iframe id="tour-youtube-player" class="tour-youtube-player" title="Tour soundtrack" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" loading="eager"></iframe>
   </div>
-</section>
 
-<section class="panel" data-panel="projects">
-  <div class="card project-card">
-    <h2>Proyectos destacados</h2>
+  <!-- QUICK TOUR -->
 
-    <div class="project-card-inner">
-      <div class="project-logo-box">
-        <img src="img\logo.png" alt="OvniCraft Network">
+  <div id="tour-prompt" class="tour-prompt" aria-hidden="true">
+    <div class="tour-prompt-backdrop"></div>
+    <div class="tour-prompt-card" role="dialog" aria-modal="true" aria-labelledby="tour-prompt-title">
+      <div class="tour-prompt-icon">✦</div>
+      <p class="eyebrow">LEFIX · TOUR RÁPIDO</p>
+      <h2 id="tour-prompt-title">¿Quieres una explicación rápida?</h2>
+      <p>Te enseño el portfolio en menos de un minuto, con una animación sincronizada con el ritmo.</p>
+      <div class="tour-prompt-actions">
+        <button id="tour-no" class="btn btn-ghost" type="button">No, gracias</button>
+        <button id="tour-yes" class="btn btn-primary" type="button">Sí, enséñame →</button>
+      </div>
+      <small>Podrás saltarla cuando quieras.</small>
+    </div>
+  </div>
 
-        <div class="project-tags">
-          <span class="project-tag">CEO</span>
-          <span class="project-tag">PROGRAMMER</span>
-          <span class="project-tag">3 AÑOS</span>
-          <span class="project-tag">Survival, BoxPvP, RandomKits...</span>
-          <span class="project-tag">PROXY / AUTH / 2 LOBBYS</span>
+  <div id="tour-overlay" class="tour-overlay" aria-hidden="true">
+    <div class="tour-vignette"></div>
+    <div class="tour-scanlines" aria-hidden="true"></div>
+    <div class="tour-step-flash" id="tour-step-flash" aria-hidden="true"></div>
+    <div class="tour-camera" aria-hidden="true"></div>
+    <div class="tour-particles" id="tour-particles" aria-hidden="true"></div>
+    <div id="tour-spotlight" class="tour-spotlight" aria-hidden="true"></div>
+    <div class="tour-topbar">
+      <span id="tour-step-count">01 / 08</span>
+      <button id="tour-skip" type="button">Saltar ×</button>
+    </div>
+    <div class="tour-card" id="tour-card">
+      <div class="tour-card-kicker" id="tour-kicker">LEFIX.DEV</div>
+      <h2 id="tour-title">Bienvenido.</h2>
+      <p id="tour-description">Una visita rápida por el portfolio.</p>
+      <div class="tour-progress"><i id="tour-progress-bar"></i></div>
+      <small>La animación sigue el ritmo · <b>~48s</b></small>
+    </div>
+    <div class="tour-beat" id="tour-beat" aria-hidden="true"></div>
+  </div>
+
+  <main class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" data-target="home" aria-label="LeFix inicio">
+        <span class="brand-mark">L</span><span>LEFIX</span>
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Navegación principal">
+        <button class="nav-btn active" data-target="home">Inicio</button>
+        <button class="nav-btn" data-target="about">Sobre mí</button>
+        <button class="nav-btn" data-target="services">Servicios</button>
+        <button class="nav-btn" data-target="plugins">Skills</button>
+        <button class="nav-btn" data-target="projects">Proyectos</button>
+        <button class="nav-btn" data-target="workflow">Proceso</button>
+        <button class="nav-btn nav-contact" data-target="contact">Contacto</button>
+      </nav>
+      <div class="top-actions">
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        <button class="theme-toggle" data-theme-cycle title="Cambiar tema" aria-label="Cambiar tema">◐</button>
+        <button id="tour-replay" class="tour-replay" type="button" aria-label="Repetir Intro" data-tooltip="¿Repetir Intro?">↻</button>
+        <a class="mini-link" href="https://github.com/LeFixYT" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </header>
+
+    <div class="content-area">
+      <section class="panel active" data-panel="home">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <div class="status-pill"><span class="status-dot"></span> Disponible para proyectos</div>
+            <p class="eyebrow">MINECRAFT DEVELOPER · SERVER SPECIALIST</p>
+            <h1>Construyo servidores<br /><span>que destacan.</span></h1>
+            <p class="hero-description">Configuración avanzada, plugins, traducciones, tiendas y sistemas para convertir una idea de Minecraft en una experiencia lista para tus jugadores.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-target="projects">Ver proyectos <span>↗</span></button>
+              <button class="btn btn-ghost" data-target="contact">Hablemos <span>→</span></button>
+            </div>
+            <div class="hero-meta"><span>5+ años de experiencia</span><i></i><span>Paper · Spigot · Velocity</span></div>
+          </div>
+          <div class="hero-visual reveal reveal-delay">
+            <div class="visual-orbit"></div>
+            <div class="visual-card glass-card">
+              <div class="visual-top"><span>LEFIX.DEV</span><span class="live-dot">● ONLINE</span></div>
+              <img src="img/MyAvatarNew.jpg" alt="Avatar de LeFix" class="avatar-hero" />
+              <div class="code-window">
+                <span><b>01</b> server.start()</span>
+                <span><b>02</b> plugins.optimize()</span>
+                <span><b>03</b> community.enjoy()</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="stats-row">
+          <div><strong>5+</strong><span>Años trabajando<br />con Minecraft</span></div>
+          <div><strong>70+</strong><span>Peak jugadores<br />en mi network</span></div>
+          <div><strong>5000+</strong><span>Líneas traducidas<br />en un plugin</span></div>
+          <div><strong>15d</strong><span>Soporte incluido<br />tras proyectos</span></div>
+        </div>
+      </section>
 
-      <div class="project-info">
-        <ul class="nice-list">
-          <li><strong>Mi Network personal</strong> - 70+ jugadores peak, Tebex + Pterodactyl.</li>
-          <li><strong>ProCosmetics traducido</strong> - +5000 líneas al español perfecto.</li>
-          <li><strong>BoxPvP custom</strong> - Sistema completo con kits, economía y clanes.</li>
-          <li>Soporte a servidores con <strong>500+ plugins</strong> sin lag y plugins recomendados.</li>
-        </ul>
-      </div>
+      <section class="panel" data-panel="about">
+        <div class="section-heading reveal"><p class="eyebrow">01 · SOBRE MÍ</p><h2>Más que configurar plugins.<br /><span>Construyo experiencias.</span></h2></div>
+        <div class="about-grid">
+          <article class="about-card glass-card reveal"><div class="big-number">01</div><h3>Me apasiona configurar</h3><p>Me apasiona la configuración de proyectos <span class="accent-text">Minecraft</span>: convertir una idea en algo limpio, funcional y bien organizado, cuidando cada pequeño detalle.</p></article>
+          <article class="about-card glass-card reveal reveal-delay"><div class="big-number">02</div><h3>Cada bug es un reto</h3><p>Un error, un bug o una configuración que no funciona no me frena: lo tomo como un reto. Investigo qué ocurre hasta encontrar una solución.</p></article>
+          <article class="about-card glass-card reveal reveal-delay-2"><div class="big-number">03</div><h3>Aprender mientras configuro</h3><p>Lo que no sé, lo busco, lo pruebo y lo configuro mientras aprendo de ello. Para mí, cada proyecto es también una oportunidad para mejorar.</p></article>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="services">
+        <div class="section-heading reveal"><p class="eyebrow">02 · SERVICIOS</p><h2>Lo que puedo hacer<br /><span>por tu servidor.</span></h2></div>
+        <div class="services-grid">
+          <article class="service-card reveal"><span class="service-icon">⚙</span><span class="service-number">01</span><h3>Plugin Configuration</h3><p>Configuración y personalización avanzada: mensajes, menús, formatos, permisos y placeholders.</p><div class="service-tags"><span>YAML</span><span>Paper</span><span>Spigot</span></div></article>
+          <article class="service-card reveal reveal-delay"><span class="service-icon">文</span><span class="service-number">02</span><h3>Traducción</h3><p>Traducción y adaptación de plugins completos, incluso archivos de más de 5000 líneas.</p><div class="service-tags"><span>ES</span><span>UX</span><span>5000+ lines</span></div></article>
+          <article class="service-card reveal reveal-delay-2"><span class="service-icon">◆</span><span class="service-number">03</span><h3>Game Modes</h3><p>Creación y ajuste de Survival, BoxPvP, RandomKits y otros modos personalizados.</p><div class="service-tags"><span>Survival</span><span>BoxPvP</span><span>RandomKits</span></div></article>
+          <article class="service-card reveal"><span class="service-icon">$</span><span class="service-number">04</span><h3>Tebex</h3><p>Tiendas, paquetes, rangos, cupones, comandos, temas y traducciones para monetización.</p><div class="service-tags"><span>Tebex</span><span>Store</span><span>Commands</span></div></article>
+          <article class="service-card reveal reveal-delay"><span class="service-icon">↯</span><span class="service-number">05</span><h3>Network Setup</h3><p>Configuración de Bungee / Velocity y Paper / Spigot enfocada a estabilidad y experiencia del jugador.</p><div class="service-tags"><span>Velocity</span><span>Bungee</span><span>Proxy</span></div></article>
+          <article class="service-card reveal reveal-delay-2"><span class="service-icon">✦</span><span class="service-number">06</span><h3>Optimización</h3><p>Revisión de configuraciones y plugins para mejorar estabilidad y experiencia del jugador.</p><div class="service-tags"><span>Performance</span><span>Config</span><span>Review</span></div></article>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="plugins">
+        <div class="section-heading reveal"><p class="eyebrow">03 · SKILLS</p><h2>Herramientas con las que<br /><span>trabajo a diario.</span></h2></div>
+        <div class="skills-layout">
+          <div class="skills-card glass-card reveal">
+            <div class="skill-row"><div><span>Plugin Configuration</span><b>95%</b></div><div class="skill-bar"><i style="width:95%"></i></div></div>
+            <div class="skill-row"><div><span>YAML</span><b>95%</b></div><div class="skill-bar"><i style="width:95%"></i></div></div>
+            <div class="skill-row"><div><span>Paper / Spigot</span><b>90%</b></div><div class="skill-bar"><i style="width:90%"></i></div></div>
+            <div class="skill-row"><div><span>Tebex</span><b>90%</b></div><div class="skill-bar"><i style="width:90%"></i></div></div>
+            <div class="skill-row"><div><span>Velocity / Bungee</span><b>90%</b></div><div class="skill-bar"><i style="width:90%"></i></div></div>
+          </div>
+          <div class="plugin-cloud reveal reveal-delay">
+            <div class="cloud-title">PLUGIN STACK</div>
+            <div class="chips">
+              <span>NLogin</span><span>EssentialsX</span><span>TAB</span><span>PL-HIDE-PRO</span><span>ConditionalEvents</span><span>ChatSentinel</span><span>zAuctionHouse</span><span>JetsPrisonMines</span><span>Mob Farm Manager</span><span>ExcellentCrates</span><span>PlotSquared</span><span>UltimateClans</span><span>UltimateKoth</span><span>DeluxeCombat</span><span>LiteBans</span><span>Vulcan</span><span>ProCosmetics</span><span>AjParkour</span><span>Tebex</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="projects">
+        <div class="section-heading reveal"><p class="eyebrow">04 · PROJECT LAB</p><h2>Proyectos que he<br /><span>llevado adelante.</span></h2></div>
+        <article class="project-feature glass-card reveal">
+          <div class="project-image"><img src="img/logo.png" alt="OvniCraft Network" /><div class="project-overlay"><span>NETWORK</span><strong>OVNICRAFT</strong></div></div>
+          <div class="project-content"><div class="project-kicker">PERSONAL NETWORK · 3 AÑOS</div><h3>OvniCraft Network</h3><p>Mi network personal, trabajando como CEO y Programmer, con Survival, BoxPvP, RandomKits y una infraestructura con proxy, auth y 2 lobbys.</p><div class="project-tags"><span>CEO</span><span>PROGRAMMER</span><span>Survival</span><span>BoxPvP</span><span>RandomKits</span><span>Proxy / Auth</span></div><div class="project-highlights"><div><b>70+</b><small>peak jugadores</small></div><div><b>Tebex</b><small>tienda integrada</small></div><div><b>Pterodactyl</b><small>infraestructura</small></div></div></div>
+        </article>
+        <div class="project-notes"><div class="note-card reveal"><span>01</span><h3>ProCosmetics</h3><p>Traducción completa de más de 5000 líneas al español.</p></div><div class="note-card reveal reveal-delay"><span>02</span><h3>BoxPvP Custom</h3><p>Sistema con kits, economía y clanes adaptado al proyecto.</p></div><div class="note-card reveal reveal-delay-2"><span>03</span><h3>500+ plugins</h3><p>Experiencia trabajando con stacks grandes y seleccionando configuraciones.</p></div></div>
+      </section>
+
+      <section class="panel" data-panel="workflow">
+        <div class="section-heading reveal"><p class="eyebrow">05 · PROCESO</p><h2>Simple, claro y<br /><span>sin vueltas.</span></h2></div>
+        <div class="process-grid">
+          <div class="process-step reveal"><span>01</span><h3>Cuéntame tu idea</h3><p>Me explicas qué servidor tienes, qué necesitas y cuál es el resultado que buscas.</p></div>
+          <div class="process-step reveal reveal-delay"><span>02</span><h3>Presupuesto</h3><p>Preparo un presupuesto ajustado al número de plugins y la complejidad del proyecto.</p></div>
+          <div class="process-step reveal reveal-delay-2"><span>03</span><h3>Configuración</h3><p>Trabajo con configs limpias, pruebas, feedback y cambios durante el proyecto.</p></div>
+          <div class="process-step reveal"><span>04</span><h3>Entrega + soporte</h3><p>Entrega lista para usar y hasta 15 días de soporte tras la configuración.</p></div>
+        </div>
+        <div class="price-banner glass-card reveal"><div><p class="eyebrow">RANGO ORIENTATIVO</p><h3>Desde <span>3 €</span> hasta <span>60 €</span></h3><p>El precio final depende del alcance y la complejidad.</p></div><button class="btn btn-primary" data-target="contact">Pedir presupuesto ↗</button></div>
+      </section>
+
+      <section class="panel" data-panel="contact">
+        <div class="contact-layout">
+          <div class="contact-copy reveal"><p class="eyebrow">06 · CONTACTO</p><h2>¿Tienes un proyecto<br /><span>en mente?</span></h2><p>Cuéntame qué quieres construir y vemos cómo convertirlo en una experiencia de Minecraft que merezca la pena.</p><div class="contact-links"><a href="mailto:lefix@protonmail.com"><span>EMAIL</span><strong>lefix@protonmail.com ↗</strong></a><a href="https://discord.gg/k8aFvCtwkY" target="_blank" rel="noreferrer"><span>DISCORD</span><strong>LeFixYT ↗</strong></a><a href="https://github.com/LeFixYT" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>@LeFixYT ↗</strong></a></div></div>
+          <div class="contact-card glass-card reveal reveal-delay"><div class="contact-card-top"><span>LEFIX.DEV</span><span>OPEN FOR WORK</span></div><div class="contact-glow"></div><div class="contact-avatar"><img src="img/MyAvatarNew.jpg" alt="LeFix" /></div><h3>Hablemos de tu servidor.</h3><p>Presupuesto en 24h · Configs listas en 48h*</p><button class="btn btn-primary full" onclick="window.location.href='mailto:lefix@protonmail.com?subject=Proyecto%20Minecraft%20-%20LeFix'">Contactar ahora ↗</button><small>*Tiempos orientativos según el proyecto.</small></div>
+        </div>
+      </section>
     </div>
-  </div>
-</section>
 
-<section class="panel" data-panel="contact">
-  <div class="card card-center">
-    <h2>¡Hablemos de tu servidor!</h2>
-    <p>Discord: <strong>LeFixYT</strong></p>
-    <p>Email: <strong>lefix@protonmail.com</strong></p>
-    <p>Presupuesto en <strong>24h</strong> - configs listas en <strong>48h</strong>.</p>
-  </div>
-</section>
-
-<nav class="nav">
-  <button class="nav-btn active" data-target="home">
-    <span class="nav-emoji">🏠</span>
-    <span class="nav-label">Home</span>
-  </button>
-  <button class="nav-btn" data-target="about">
-    <span class="nav-emoji">👤</span>
-    <span class="nav-label">Sobre mí</span>
-  </button>
-<button class="nav-btn" data-target="plugins">
-  <span class="nav-emoji">🧩</span>
-  <span class="nav-label">Plugins</span>
-</button>
-  <button class="nav-btn" data-target="projects">
-    <span class="nav-emoji">💻</span>
-    <span class="nav-label">Proyectos</span>
-  </button>
-  <button class="nav-btn" data-target="workflow">
-    <span class="nav-emoji">⚙️</span>
-    <span class="nav-label">Workflow</span>
-  </button>
-  <button class="nav-btn" data-target="contact">
-    <span class="nav-emoji">✉️</span>
-    <span class="nav-label">Contacto</span>
-  </button>
-</nav>
-
-<div class="music-player">
-      <button id="mp-prev" class="mp-btn">⏮</button>
-      <button id="mp-play" class="mp-btn">▶</button>
-      <button id="mp-pause" class="mp-btn">⏸</button>
-      <button id="mp-next" class="mp-btn">⏭</button>
-
-  <div class="mp-seek-wrap">
-    <div class="mp-seek-progress"></div>
-    <input id="mp-seek" type="range" min="0" max="0" value="0" />
-  </div>
-
-<div class="mp-volume-block">
-  <span class="mp-volume-icon">🔊</span>
-  <div class="mp-volume-wrap">
-    <div class="mp-volume-progress"></div>
-    <input id="mp-volume" type="range" min="0" max="1" step="0.01" value="0.4" />
-  </div>
-</div>
-
-  <span id="mp-time" class="mp-time">00:00 / 00:00</span>
-  <span id="mp-title" class="mp-title">Musica 🎶</span>
-</div>
-
-<audio id="mp-audio">
-  <source src="audio/chill1.mp3" type="audio/mpeg">
-</audio>
-
-    <div class="theme-switcher">
-      <button class="theme-btn active" data-theme="default" title="Tema normal">🎨</button>
-      <button class="theme-btn" data-theme="xmas" title="Tema navidad">🎄</button>
-      <button class="theme-btn" data-theme="halloween" title="Tema halloween">🎃</button>
-    </div>
+    <footer class="site-footer"><span>5+ años trabajando con Minecraft</span><span>LEFIX.DEV · Minecraft Developer</span></footer>
   </main>
 
+  <div id="easter-ad-modal" class="easter-ad-modal" aria-hidden="true">
+    <div class="easter-ad-backdrop" data-close-easter></div>
+    <div class="easter-ad-card" role="dialog" aria-modal="true" aria-labelledby="easter-ad-title">
+      <button class="easter-ad-close" id="easter-ad-close" type="button" aria-label="Cerrar">×</button>
+      <div class="easter-ad-badge">🔥 OFERTA EXCLUSIVA</div>
+      <img id="easter-ad-image" src="img/easter-ad.jpg" alt="Imagen del easter egg" class="easter-ad-image" />
+      <p class="easter-ad-kicker">ACCESO +18 · SOLO POR HOY</p>
+      <h2 id="easter-ad-title">CHICAS CALIENTES CERCA DE TI 🔥</h2>
+      <p class="easter-ad-copy">No vas a creer lo que hay detrás de este botón... ¿te atreves?</p>
+      <button id="easter-ad-go" class="easter-ad-go" type="button">IR →</button>
+      <small>Oferta 100% sospechosa · LeFix no se hace responsable 😂</small>
+    </div>
+  </div>
+
+  <div class="music-player" aria-label="Reproductor de música">
+    <div class="mp-controls">
+      <button id="mp-prev" class="mp-btn" title="Anterior">⏮</button>
+      <button id="mp-play" class="mp-btn primary" title="Reproducir">▶</button>
+      <button id="mp-pause" class="mp-btn" title="Pausar">⏸</button>
+      <button id="mp-next" class="mp-btn" title="Siguiente">⏭</button>
+    </div>
+    <div class="mp-track"><span id="mp-title">Música · Chill 01</span><div class="mp-seek-wrap"><div class="mp-seek-progress"></div><input id="mp-seek" type="range" min="0" max="0" value="0" /></div></div>
+    <div class="mp-volume-wrap"><button id="mp-mute" class="mp-volume-btn" type="button" title="Silenciar">🔊</button><input id="mp-volume" type="range" min="0" max="1" step="0.01" value="0.05" aria-label="Volumen" /></div>
+    <span id="mp-time" class="mp-time">0:00 / 0:00</span>
+  </div>
+
+  <audio id="mp-audio"><source src="audio/chill1.mp3" type="audio/mpeg"></audio>
   <audio id="ui-click" src="audio/click.mp3" preload="auto"></audio>
-  <canvas id="mp-visualizer"></canvas>
-  <script src="app.js"></script>
+  <canvas id="mp-visualizer" aria-hidden="true"></canvas>
+
+
+  <!-- YOUTUBE EASTER EGG -->
+  <div id="youtube-easter-modal" class="youtube-easter-modal" aria-hidden="true">
+    <div class="youtube-easter-backdrop" data-close-youtube></div>
+    <div class="youtube-easter-card" role="dialog" aria-modal="true" aria-labelledby="youtube-easter-title">
+      <button class="youtube-easter-close" id="youtube-easter-close" type="button" aria-label="Cerrar">×</button>
+      <div class="youtube-easter-kicker">🥚 SECRET MEDIA PLAYER</div>
+      <h2 id="youtube-easter-title">LEFIX <span>YouTube Player</span></h2>
+      <p>Pega un enlace de YouTube y el reproductor intentará cargarlo aquí.</p>
+      <div class="youtube-url-row">
+        <input id="youtube-easter-url" type="url" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off" />
+        <button id="youtube-easter-load" type="button">REPRODUCIR ▶</button>
+      </div>
+      <div class="youtube-frame-wrap">
+        <iframe id="youtube-easter-frame"
+          title="LeFix YouTube Easter Egg"
+          src=""
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          allowfullscreen></iframe>
+      </div>
+      <div id="youtube-easter-status" class="youtube-easter-status">Selecciona una pista o pega tu enlace.</div>
+      <div class="youtube-radio-head"><strong>LEFIX PHONK RADIO</strong><span>Vídeos externos de YouTube</span></div>
+      <div id="youtube-track-list" class="youtube-track-list"></div>
+      <div class="youtube-help-row"><small>Si un vídeo no permite inserción, ábrelo directamente en YouTube.</small><a id="youtube-easter-open" href="https://youtu.be/sDMxQF18yvA?si=sayktiD408Nd6RMa" target="_blank" rel="noopener noreferrer">Abrir en YouTube ↗</a></div>
+    </div>
+  </div>
+  <script src="app.js" defer></script>
 </body>
 </html>
