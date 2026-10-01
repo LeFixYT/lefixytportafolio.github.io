@@ -1,0 +1,11 @@
+Fondo del tour sin anuncios (opcional)
+--------------------------------------
+Orden que sigue el tour:
+  1) Si existe video/tour.mp4 (o tour.webm) lo usa de fondo y sonido, directamente desde tu web: sin YouTube y sin anuncios.
+  2) Si no existe, usa los vídeos de YouTube como hasta ahora (pueden salir anuncios a quien no use bloqueador).
+  3) Si YouTube falla o está bloqueado, usa la imagen animada de fondo y la música Chill de la web.
+
+Para quitar los anuncios, descarga tu propio vídeo desde YouTube Studio y comprímelo (720p, pesa poco):
+  ffmpeg -i original.mp4 -vf "scale=1280:-2" -c:v libx264 -crf 28 -preset slow -c:a aac -b:a 96k -movflags +faststart tour.mp4
+Recomendado: menos de 10 MB. Recorta el trozo que quieras (-ss 62 -t 60).
+Guárdalo aquí como tour.mp4. Usa solo vídeos tuyos o con licencia.
